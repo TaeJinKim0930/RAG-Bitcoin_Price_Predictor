@@ -15,7 +15,20 @@ This project demonstrates a RAG (Retrieval Augmented Generation) solution for pr
 
 2. **Install dependencies:**
 
-3. **Set up environment variables:**
+   
+- ### 필수 패키지
+`pip install python-dotenv streamlit requests beautifulsoup4`
+
+- ### LangChain 관련
+`pip install langchain langchain-openai langchain-community`
+
+- ### OpenAI (GPT 모델 사용을 위한 패키지)
+`pip install openai`
+
+- ### Tavily 검색 툴 사용 시 (주의: API 키 필요)
+`pip install tavily-python`
+
+4. **Set up environment variables:**
    * Create a `.env` file in the root directory of the project.
    * Add your OpenAI API key and Tavily API key to the `.env` file:
    OPENAI_API_KEY=your_openai_api_key
@@ -25,10 +38,11 @@ This project demonstrates a RAG (Retrieval Augmented Generation) solution for pr
 ## Usage
 
 1. **Run the Streamlit app:**
+   `streamlit run your_script.py`
 
-2. **Enter your query:** In the Streamlit app, enter a question or query related to Bitcoin price prediction.
+3. **Enter your query:** In the Streamlit app, enter a question or query related to Bitcoin price prediction.
 
-3. **View the prediction:** The app will display the predicted price of Bitcoin along with the sources used to generate the prediction.
+4. **View the prediction:** The app will display the predicted price of Bitcoin along with the sources used to generate the prediction.
 
 ## Disclaimer
 
