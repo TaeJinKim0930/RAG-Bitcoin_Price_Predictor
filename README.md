@@ -14,25 +14,18 @@ This project demonstrates a RAG (Retrieval Augmented Generation) solution for pr
 1. **Clone the repository:**
 
 2. **Install dependencies:**
-
-   
-- ### 필수 패키지
-`pip install python-dotenv streamlit requests beautifulsoup4`
-
-- ### LangChain 관련
-`pip install langchain langchain-openai langchain-community`
-
-- ### OpenAI (GPT 모델 사용을 위한 패키지)
-`pip install openai`
-
-- ### Tavily 검색 툴 사용 시 (주의: API 키 필요)
-`pip install tavily-python`
+  - Run Installation Script: `./setup.sh`
 
 4. **Set up environment variables:**
    * Create a `.env` file in the root directory of the project.
-   * Add your OpenAI API key and Tavily API key to the `.env` file:
-   OPENAI_API_KEY=your_openai_api_key
-   TAVILY_API_KEY=your_tavily_api_key
+   * Add your OpenAI API key and Tavily API key to the `.env` file: 
+
+    > Without replacing the value of API Keys, you will encounter 'TypeError: string indices must be integers, not 'str' error <br>
+   
+    OPENAI_API_KEY=your_openai_api_key <br>
+    TAVILY_API_KEY=your_tavily_api_key
+   
+
 
 
 ## Usage
